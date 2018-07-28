@@ -1,0 +1,205 @@
+doctype
+html(lang="eng-ru")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link rel="stylesheet" href="fonts/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+        link(href="styles/style.css" rel="stylesheet")
+        title="test"
+    body
+        section.header
+            .container
+                 .logo ЛОГОТИП
+                 .phone-number 8 800 777 50 50
+                 form(action="" class="form-search")
+                    button(type="submit" class="form-search__submit-wrapper")
+                        i.form-search__submit.fa.fa-search
+                    input(type="search" class="form-search__input" placeholder="Поиск товаров")
+                    div.fa.fa-search.form-search__button-visible
+                 a(class="shipping-and-payment-link" href="") Доставка и оплата
+            input(type="checkbox" class="menu-button-input" id="menu-button-id")
+            label(for="menu-button-id" class="menu-button")
+                include ../image/menu-burger.svg
+            .navigation-wrapper
+                .container
+                    nav.navigation
+                        ul(class="navigation__listen-menu")
+                            li.navigation__listen-menu-item
+                                a(class="navigation__listen-menu-link" href="") Мобильные телефоны
+                            li.navigation__listen-menu-item
+                                a(class="navigation__listen-menu-link" href="") Планшеты
+                            li.navigation__listen-menu-item
+                                a(class="navigation__listen-menu-link" href="") Фототехника
+                            li.navigation__listen-menu-item
+                                a(class="navigation__listen-menu-link" href="") Ноутбуки
+                            li.navigation__listen-menu-item
+                                a(class="navigation__listen-menu-link" href="") Телевизоры
+                    div.shopping-cart
+                        a(class="shopping-cart__link" href="") Корзина
+        section.main-content
+            .container
+                .product-filters
+                div.status-bar
+                    span.name-item-menu Фототехника
+                    input(type="checkbox" class="status-bar-input" id="status-bar-input-id")
+                    label(for="status-bar-input-id" class="status-bar-button")
+                        include ../image/controls.svg
+                    form(class="form-filters" action="" name="form-filters")
+                        div.custom-select
+                            div(class="selectСustom__select-border")
+                            select(class="select-Сustom")
+                                option(value="0") Любого логотипа
+                                option(value="1") Компакт-камера
+                                option(value="2") Беззеркальная
+                                option(value="3") Зеркальная
+                                option(value="4") Среднеформатная
+                        div.custom-select
+                            div(class="selectСustom__select-border")
+                            select(class="select-Сustom")
+                                 option(value="1") Любого бренда
+                                 option(value="2") Canon
+                                 option(value="3") Nikon
+                                 option(value="4") Sony
+                                 option(value="5") Fujifilm
+                                 option(value="6") Samsung
+                                 option(value="7") Olympus
+                        span.by-price По цене
+                        input(class="form-filters__price-from" type="text" placeholder="от        500 000")
+                        input(class="form-filters__price-up-to" type="text" placeholder="до        25 000 000")
+                        button(class="form-filters__button") Применить
+                        span.by-price Рублей
+                    div.bg_layer
+                .goods
+                    .discount
+                        .discount__picture
+                            img(src="image/picture_for_discount-block.png" alt="camera" class="product-item__img")
+                        .discount__product-description
+                            .discount__product-description-heading.
+                                Canon EOS 5D Mark III Body
+                            .discount__product-description-description.
+                                Полнокадровая цифровая зеркальная камера,
+                                предназначкнная для опытных любителей,
+                                профессиональных фотографов и видеооператоров.
+                                Преемник успешной модели EOS 5D Mark II. Фотоаппарат
+                                имеет 22.3 Мп. CMOS-сенсор размером 36&times24 мм,
+                                14-битный процессор DIGIC 5+,
+                                61-точечный автофокус.
+                            strike.price-discount 4 400,00 руб.
+                            .price 3 200,00 руб.
+
+                    .product-item
+                        .product-item__picture
+                            img(src="image/picture_for_product-block.png" alt="picture camera")
+                        .product-item__description
+                            .product-item__product-description-heading.
+                                Canon EOS 5D Mark III Body
+                            .product-item__product-description-description.
+                                Полнокадровая цифровая зеркальная камера,
+                                предназначкнная для опытных любителей.
+                            .product-item__price 3 200,00 руб.
+
+                    .product-item
+                        .product-item__picture
+                            img(src="image/picture_for_product-block.png" alt="picture camera")
+                        .product-item__description
+                            .product-item__product-description-heading.
+                                Canon EOS 5D Mark III Body
+                            .product-item__product-description-description.
+                                Полнокадровая цифровая зеркальная камера,
+                                предназначкнная для опытных любителей.
+                            .product-item__price 3 200,00 руб.
+
+                    .product-item
+                        .product-item__picture
+                            img(src="image/picture_for_product-block.png" alt="picture camera")
+                        .product-item__description
+                            .product-item__product-description-heading.
+                                Canon EOS 5D Mark III Body
+                            .product-item__product-description-description.
+                                Полнокадровая цифровая зеркальная камера,
+                                предназначкнная для опытных любителей.
+                            .product-item__price 3 200,00 руб.
+
+                    .product-item
+                        .product-item__picture
+                            img(src="image/picture_for_product-block.png" alt="picture camera")
+                        .product-item__description
+                            .product-item__product-description-heading.
+                                Canon EOS 5D Mark III Body
+                            .product-item__product-description-description.
+                                Полнокадровая цифровая зеркальная камера,
+                                предназначкнная для опытных любителей.
+                            .product-item__price 3 200,00 руб.
+
+                    .product-item
+                        .product-item__picture
+                            img(src="image/picture_for_product-block.png" alt="picture camera")
+                        .product-item__description
+                            .product-item__product-description-heading.
+                                Canon EOS 5D Mark III Body
+                            .product-item__product-description-description.
+                                Полнокадровая цифровая зеркальная камера,
+                                предназначкнная для опытных любителей.
+                            .product-item__price 3 200,00 руб.
+
+                    .product-item
+                        .product-item__picture
+                            img(src="image/picture_for_product-block.png" alt="picture camera")
+                        .product-item__description
+                            .product-item__product-description-heading.
+                                Canon EOS 5D Mark III Body
+                            .product-item__product-description-description.
+                                Полнокадровая цифровая зеркальная камера,
+                                предназначкнная для опытных любителей.
+                            .product-item__price 3 200,00 руб.
+
+                    .product-item
+                        .product-item__picture
+                            img(src="image/picture_for_product-block.png" alt="picture camera")
+                        .product-item__description
+                            .product-item__product-description-heading.
+                                Canon EOS 5D Mark III Body
+                            .product-item__product-description-description.
+                                Полнокадровая цифровая зеркальная камера,
+                                предназначкнная для опытных любителей.
+                            .product-item__price 3 200,00 руб.
+
+                    .product-item
+                        .product-item__picture
+                            img(src="image/picture_for_product-block.png" alt="picture camera")
+                        .product-item__description
+                            .product-item__product-description-heading.
+                                Canon EOS 5D Mark III Body
+                            .product-item__product-description-description.
+                                Полнокадровая цифровая зеркальная камера,
+                                предназначкнная для опытных любителей.
+                            .product-item__price 3 200,00 руб.
+                   
+                    .product-item
+                        .product-item__picture
+                            img(src="image/picture_for_product-block.png" alt="picture camera")
+                        .product-item__description
+                            .product-item__product-description-heading.
+                                Canon EOS 5D Mark III Body
+                            .product-item__product-description-description.
+                                Полнокадровая цифровая зеркальная камера,
+                                предназначкнная для опытных любителей.
+                            .product-item__price 3 200,00 руб.
+                    
+                    .product-item
+                        .product-item__picture
+                            img(src="image/picture_for_product-block.png" alt="picture camera")
+                        .product-item__description
+                            .product-item__product-description-heading.
+                                Canon EOS 5D Mark III Body
+                            .product-item__product-description-description.
+                                Полнокадровая цифровая зеркальная камера,
+                                предназначкнная для опытных любителей.
+                            .product-item__price 3 200,00 руб.
+        script(src="js/javascript.js")
+
+
+            
+         
+            
